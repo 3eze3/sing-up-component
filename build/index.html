@@ -8,7 +8,6 @@
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -17,20 +16,29 @@
 <body>
 
   <!-- Sign-up form start -->
-
-  Stay updated!
-
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
+<main class="card">
+  <section class="card__content">
+    <h1 class="card__title">  Stay updated!</h1>
+    <div class="card__wrapper">
+      <p class="card__information">Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul class="card__list">
+        <li class="card__products">Product discovery and building what matters</li>
+        <li class="card__products">Measuring to ensure updates are a success</li>
+        <li class="card__products">And much more!</li>
+      </ul>
+    </div>
+    <form action="#" class="card__form">
+      <label class="card__label">
+        Email address
+        <input type="text" name="email" id="card__email" placeholder="email@company.com">
+      </label>
+      <button class="card__btn">Subscribe to monthly newsletter</button>
+    </form>
+  </section> 
+  <div class="card__image">
+    <img src="assets/images/illustration-sign-up-desktop.svg" alt aria-hidden="true">
+  </div>
+</main>
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
@@ -43,10 +51,5 @@
   Dismiss message
 
   <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
