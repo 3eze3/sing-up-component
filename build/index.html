@@ -9,11 +9,9 @@
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
 <body>
-
-  <!-- Sign-up form start -->
 <main class="card">
   <section class="card__content">
-    <h1 class="card__title">  Stay updated!</h1>
+    <h1 class="card__title">Stay updated!</h1>
     <div class="card__wrapper">
       <p class="card__information">Join 60,000+ product managers receiving monthly updates on:</p>
       <ul class="card__list">
@@ -30,21 +28,17 @@
       <button class="card__btn">Subscribe to monthly newsletter</button>
     </form>
   </section> 
-  <div class="card__image">
-    <img src="assets/images/illustration-sign-up-desktop.svg" alt aria-hidden="true">
-  </div>
+  
+  <picture class="card__image">
+    <source srcset="assets/images/illustration-sign-up-desktop.svg" media="(min-width:600px)">
+    <img src="assets/images/illustration-sign-up-mobile.svg" alt aria-hidden="true">
+  </picture>
 </main>
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
   Thanks for subscribing!
 
   A confirmation email has been sent to ash@loremcompany.com. 
   Please open it and click the button inside to confirm your subscription.
 
   Dismiss message
-
-  <!-- Success message end -->
 </body>
 </html>
