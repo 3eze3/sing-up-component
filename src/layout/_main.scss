@@ -1,26 +1,27 @@
 @use "../abstract/mixins" as layout; 
+@use "../abstract/variables" as colors_bg; 
 .card {
   @include layout.flex($direction:column-reverse);
-  &__title{
-    margin-bottom: 1rem;
+  &__title {
+    margin-bottom: colors_bg.$mrg-bottom-1-25rem;
   }
 
   &__content {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.65rem;
   }
 
   &__wrapper {
     padding-right: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: colors_bg.$mrg-bottom-1-25rem;
   }
 
   &__information {
-    margin-bottom: 1.5rem;
+    margin-bottom: colors_bg.$mrg-bottom-1-5rem;
   }
 
   &__products{
+    margin-bottom: colors_bg.$mrg-bottom-1-25rem;
     @include layout.flex($aling:flex-start, $justify:flex-start, $direction:row);
-    margin-bottom: 1rem;
     &::before{
       content: url("../../build/assets/images/icon-list.svg");
     }
