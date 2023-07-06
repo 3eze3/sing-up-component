@@ -1,0 +1,28 @@
+@use "../abstract/mixins" as layout; 
+.card {
+  @include layout.flex($direction:column-reverse);
+  &__title{
+    margin-bottom: 1rem;
+  }
+
+  &__content {
+    padding: 1rem 1.5rem;
+  }
+
+  &__wrapper {
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__information {
+    margin-bottom: 1.5rem;
+  }
+
+  &__products{
+    @include layout.flex($aling:flex-start, $justify:flex-start, $direction:row);
+    margin-bottom: 1rem;
+    &::before{
+      content: url("../../build/assets/images/icon-list.svg");
+    }
+  }
+}
