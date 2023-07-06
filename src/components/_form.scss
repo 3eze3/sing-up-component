@@ -1,0 +1,16 @@
+@use "../abstract/variables" as colors_bg;
+.form {
+  width: 93%;
+  margin-top: 1.85rem;
+  &__input {
+    border-radius: colors_bg.$bd-radius-4px;
+    padding: colors_bg.$padding-1rem-1-7rem;
+    margin: 1rem 0 1.5rem;
+    outline: solid 1px #0003;
+  }
+
+  &__btn {
+    border-radius: colors_bg.$bd-radius-4px;
+    padding: colors_bg.$padding-1rem-1-7rem;
+  }
+}
