@@ -36,14 +36,24 @@ form , input, button , label{
   hyphens: manual;
   display: block;
   appearance: none;
+  width: 100%;
+}
+
+input {
+  font-size: 1.12em;
+  color: colors_bg.$charcoal-grey;
+  &::placeholder{
+    color: colors_bg.$grey;
+  }
 }
 
 label {
   font-family: roboto_bold;
-  font-size: .8em;
+  font-size: .9em;
 }
 
 button{
   background-color: colors_bg.$dark-slate-grey;
   color: colors_bg.$white;
+  font-size: 1.05em;
 }
