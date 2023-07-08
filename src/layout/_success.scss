@@ -1,0 +1,24 @@
+@use "../abstract/mixins" as layout;
+.success {
+  height: 100dvh;
+  padding: 6.5rem 1.5rem 1rem 1.5rem;
+  @include layout.flex($aling:flex-start, $justify:space-around, $gap:15rem);
+
+  &__icon {
+    margin-bottom: 2rem;
+    width: 4rem;
+  }
+
+  &__title {
+    line-height: .95;
+    margin-bottom: 2rem;
+  }
+
+  &__description {
+    line-height: 1.5;
+  }
+
+  &__button{
+    padding: 1.2rem 1rem;
+  }
+}
