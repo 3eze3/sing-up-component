@@ -1,8 +1,18 @@
 @use "../abstract/mixins" as layout;
 .success {
-  height: 100dvh;
-  padding: 6.5rem 1.5rem 1rem 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index:10;
+  opacity: 0;
+  padding: 6.5rem 1.5rem 4rem 1.5rem;
   @include layout.flex($aling:flex-start, $justify:space-around, $gap:15rem);
+  &__show{
+    z-index: 20;
+    opacity: 1;
+  }
 
   &__icon {
     margin-bottom: 2rem;
