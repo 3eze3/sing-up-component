@@ -1,15 +1,29 @@
 @use "../abstract/mixins" as layout; 
 @use "../abstract/variables" as colors_bg; 
 .card {
-  @include layout.flex($direction:column-reverse);
+  height: 100dvh;
+  position: relative;
   &__title {
     margin-bottom: colors_bg.$mrg-bottom-1-25rem;
   }
 
   &__content {
-    padding: 1rem 1.65rem;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 20;
+    opacity: 1;
+    @include layout.flex($direction:column-reverse);
   }
 
+  &__hidden{
+    z-index: 10;
+    opacity: 0;
+  }
+
+  &__container {
+    padding: 1rem 1.65rem;
+  }
   &__wrapper {
     padding-right: 2rem;
     margin-bottom: colors_bg.$mrg-bottom-1-25rem;
