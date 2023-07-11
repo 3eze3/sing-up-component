@@ -94,6 +94,7 @@ input::placeholder {
 label {
   font-family: roboto_bold;
   font-size: 0.9em;
+  position: relative;
 }
 
 strong {
@@ -122,12 +123,34 @@ button {
   outline-color: hsl(234deg, 29%, 20%);
   transition: outline 0.1s ease-in;
 }
+.form__error {
+  color: red;
+  position: absolute;
+  top: 0;
+  right: 0.15rem;
+  opacity: 0;
+}
+.form__show {
+  opacity: 1;
+}
+.form__inputError {
+  color: red;
+  background-color: rgba(255, 0, 0, 0.208);
+  outline-color: rgba(255, 3, 3, 0.502);
+}
 .form__btn {
   padding: 1.2rem 1.7rem;
+  transition: 0.2s ease-in;
 }
 @media screen and (min-width: 720px) {
   .form__btn {
     padding: 1rem 1.5rem;
+    cursor: pointer;
+  }
+  .form__btn:hover {
+    background-color: hsl(4deg, 100%, 67%);
+    box-shadow: 0.1rem 0.1rem 0.4rem hsl(4deg, 100%, 67%), -0.1rem -0.1rem 0.2rem hsl(4deg, 100%, 64%);
+    transition: 0.2s ease-in;
   }
 }
 
