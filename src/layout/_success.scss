@@ -1,15 +1,27 @@
 @use "../abstract/mixins" as layout;
+@use "../abstract/variables" as colors_bg;
 .success {
   position: fixed;
+  padding: 6.5rem 1.5rem 4rem 1.5rem;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index:10;
+  z-index: 10;
   opacity: 0;
-  padding: 6.5rem 1.5rem 4rem 1.5rem;
-  @include layout.flex($aling:flex-start, $justify:space-around, $gap:15rem);
-  &__show{
+  @include layout.flex($aling: flex-start, $justify: space-around, $gap: 15rem);
+  @include layout.media-break() {
+    border-radius: 2.5rem;
+    background-color: colors_bg.$white;
+    display: block;
+    height: 65%;
+    margin-inline: auto;
+    padding: 3rem;
+    top: calc(50% - 37.5%);
+    width: 32%;
+  }
+
+  &__show {
     z-index: 20;
     opacity: 1;
   }
@@ -17,18 +29,26 @@
   &__icon {
     margin-bottom: 2rem;
     width: 4rem;
+    height: fit-content;
   }
 
   &__title {
-    line-height: .95;
+    line-height: 0.95;
     margin-bottom: 2rem;
+    @include layout.media-break() {
+      margin-bottom: 1.8rem;
+      font-size: 3.5em;
+    }
   }
 
   &__description {
     line-height: 1.5;
   }
 
-  &__button{
+  &__button {
     padding: 1.2rem 1rem;
+    @include layout.media-break() {
+      margin-top: colors_bg.$mrg-1-5rem;
+    }
   }
 }
