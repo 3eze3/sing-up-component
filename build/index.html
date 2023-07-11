@@ -1,51 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./css/style.css"> 
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-</head>
-<body>
-<main class="card">
-  <section class="card__content">
-    <div class="card__container">
-      <h1 class="card__title">Stay updated!</h1>
-      <div class="card__wrapper">
-        <p class="card__information">Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul class="card__list">
-          <li class="card__products">Product discovery and building what matters</li>
-          <li class="card__products">Measuring to ensure updates are a success</li>
-          <li class="card__products">And much more!</li>
-        </ul>
-      </div>
-      <form action="#" class="card__form form ">
-        <label class="form__label">
-          Email address
-          <input class="form__input" type="text" name="email" id="email" placeholder="email@company.com">
-        </label>
-        <button class="form__btn">Subscribe to monthly newsletter</button>
-      </form>
-   </div> 
-      <picture class="card__image">
-        <source srcset="assets/images/illustration-sign-up-desktop.svg" media="(min-width:721px)">
-        <img src="assets/images/illustration-sign-up-mobile.svg" alt aria-hidden="true">
-      </picture>
-  </section> 
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <main class="card">
+      <section class="card__content">
+        <div class="card__container">
+          <h1 class="card__title">Stay updated!</h1>
+          <div class="card__wrapper">
+            <p class="card__information">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+            <ul class="card__list">
+              <li class="card__products">
+                Product discovery and building what matters
+              </li>
+              <li class="card__products">
+                Measuring to ensure updates are a success
+              </li>
+              <li class="card__products">And much more!</li>
+            </ul>
+          </div>
+          <form action="#" class="card__form form">
+            <label class="form__label">
+              Email address
+              <input
+                class="form__input"
+                type="text"
+                name="email"
+                id="email"
+                placeholder="email@company.com" />
+            </label>
+            <button class="form__btn">Subscribe to monthly newsletter</button>
+          </form>
+        </div>
+        <picture class="card__image">
+          <source
+            srcset="assets/images/illustration-sign-up-desktop.svg"
+            media="(min-width:721px)" />
+          <img
+            src="assets/images/illustration-sign-up-mobile.svg"
+            alt
+            aria-hidden="true" />
+        </picture>
+      </section>
 
-  <section class="main__success success">
-    <div class="success__wrapper">
-      <img class="success__icon" src="assets/images/icon-success.svg" alt aria-hidden="true">
-      <h2 class="success__title">Thanks for subscribing!</h2>
-      <p class="success__description">
-        A confirmation email has been sent to <strong>ash@loremcompany.com.</strong>  
-        Please open it and click the button inside to confirm your subscription.
-      </p> 
-    </div>
-    <button class="success__button">Dismiss message</button>
-  </section>
-</main>
-</body>
+      <section class="main__success success">
+        <div class="success__wrapper">
+          <img
+            class="success__icon"
+            src="assets/images/icon-success.svg"
+            alt
+            aria-hidden="true" />
+          <h2 class="success__title">Thanks for subscribing!</h2>
+          <p class="success__description">
+            A confirmation email has been sent to
+            <strong>ash@loremcompany.com.</strong>
+            Please open it and click the button inside to confirm your
+            subscription.
+          </p>
+        </div>
+        <button class="success__button">Dismiss message</button>
+      </section>
+    </main>
+  </body>
 </html>
