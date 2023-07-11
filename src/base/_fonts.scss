@@ -1,4 +1,5 @@
 @use "../abstract/variables" as colors_bg;
+@use "../abstract/mixins" as layout;
 
 @font-face {
   font-family: roboto_bold;
@@ -18,20 +19,31 @@ body {
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @include layout.media-break() {
+    background-color: colors_bg.$dark-slate-grey;
+  }
 }
 
-h1 , h2 {
+h1,
+h2 {
   font-family: roboto_bold;
   color: colors_bg.$dark-slate-grey;
   font-size: 3em;
+  @include layout.media-break() {
+    font-size: 3.75em;
+  }
 }
 
-p, li {
+p,
+li {
   font-size: 1.105em;
   color: colors_bg.$charcoal-grey;
 }
 
-form , input, button , label{
+form,
+input,
+button,
+label {
   font-family: inherit;
   hyphens: manual;
   display: block;
@@ -42,21 +54,21 @@ form , input, button , label{
 input {
   font-size: 1.12em;
   color: colors_bg.$charcoal-grey;
-  &::placeholder{
+  &::placeholder {
     color: colors_bg.$grey;
   }
 }
 
 label {
   font-family: roboto_bold;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 strong {
   font-family: roboto_bold;
 }
 
-button{
+button {
   background-color: colors_bg.$dark-slate-grey;
   border-radius: colors_bg.$bd-radius-4px;
   color: colors_bg.$white;
