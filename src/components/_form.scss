@@ -1,4 +1,5 @@
 @use "../abstract/variables" as colors_bg;
+@use "../abstract/mixins" as layout;
 .form {
   width: 93%;
   margin-top: 1.85rem;
@@ -7,14 +8,17 @@
     padding: colors_bg.$padding-1rem-1-7rem;
     margin: 1rem 0 1.5rem;
     outline: solid 1px #0003;
-    transition: outline .1s ease-in;
-    &:focus{
+    transition: outline 0.1s ease-in;
+    &:focus {
       outline-color: colors_bg.$dark-slate-grey;
-      transition: outline .1s ease-in;
+      transition: outline 0.1s ease-in;
     }
   }
 
   &__btn {
     padding: colors_bg.$padding-1rem-1-7rem;
+    @include layout.media-break() {
+      padding: 1rem 1.5rem;
+    }
   }
 }
