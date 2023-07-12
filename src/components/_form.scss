@@ -21,16 +21,18 @@
     top: 0;
     right: 0.15rem;
     opacity: 0;
-  }
-
-  &__show {
-    opacity: 1;
+    transition: opacity 0.15s ease-in;
+    &--active {
+      opacity: 1;
+      transition: opacity 0.15s ease-in;
+    }
   }
 
   &__inputError {
     color: red;
     background-color: rgba(255, 0, 0, 0.208);
     outline-color: rgba(255, 3, 3, 0.502);
+    transition: 0.15s ease;
   }
 
   &__btn {
@@ -38,7 +40,6 @@
     transition: 0.2s ease-in;
     @include layout.media-break() {
       padding: 1rem 1.5rem;
-      cursor: pointer;
       &:hover {
         background-color: colors_bg.$tomato;
         box-shadow: 0.1rem 0.1rem 0.4rem colors_bg.$tomato,
