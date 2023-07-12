@@ -24,6 +24,7 @@
   &__show {
     z-index: 20;
     opacity: 1;
+    transition: opacity 1s ease 1s;
   }
 
   &__icon {
