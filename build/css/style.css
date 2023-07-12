@@ -106,6 +106,7 @@ button {
   border-radius: 5px;
   color: hsl(0deg, 0%, 100%);
   font-size: 1.1em;
+  cursor: pointer;
 }
 
 .form {
@@ -129,14 +130,17 @@ button {
   top: 0;
   right: 0.15rem;
   opacity: 0;
+  transition: opacity 0.15s ease-in;
 }
-.form__show {
+.form__error--active {
   opacity: 1;
+  transition: opacity 0.15s ease-in;
 }
 .form__inputError {
   color: red;
   background-color: rgba(255, 0, 0, 0.208);
   outline-color: rgba(255, 3, 3, 0.502);
+  transition: 0.15s ease;
 }
 .form__btn {
   padding: 1.2rem 1.7rem;
@@ -145,7 +149,6 @@ button {
 @media screen and (min-width: 720px) {
   .form__btn {
     padding: 1rem 1.5rem;
-    cursor: pointer;
   }
   .form__btn:hover {
     background-color: hsl(4deg, 100%, 67%);
@@ -171,6 +174,7 @@ button {
   position: absolute;
   z-index: 20;
   opacity: 1;
+  transition: opacity 0.75s ease 0.1s;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -196,6 +200,7 @@ button {
 .card__hidden {
   z-index: 10;
   opacity: 0;
+  transition: opacity 0.75s ease;
 }
 .card__container {
   padding: 1rem 1.65rem;
@@ -267,6 +272,7 @@ button {
 .success__show {
   z-index: 20;
   opacity: 1;
+  transition: opacity 1s ease 1s;
 }
 .success__icon {
   margin-bottom: 2rem;
