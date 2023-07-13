@@ -22,9 +22,8 @@ export class Form {
       this.success.classList.add("success__show");
       this.login.classList.add("card__hidden");
       user.textContent = this.email.value;
-    } else {
-      this.handleError();
     }
+    this.handleError();
   }
 
   backLogin() {
