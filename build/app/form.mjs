@@ -17,11 +17,13 @@ export class Form {
   }
 
   showSucessCard() {
+    const user = document.getElementById('user-email');
     if (this.isValidEmail()) {
       this.success.classList.add("success__show");
-      this.login.classList.add("card__hidden")
+      this.login.classList.add("card__hidden");
+      user.textContent = this.email.value;
     } else {
-      this.handleError()
+      this.handleError();
     }
   }
 
