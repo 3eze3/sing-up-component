@@ -1,4 +1,3 @@
-// import { validFormat, back } from "./validForm.mjs";
 import { Form } from "./form.mjs";
 function main() {
   const button = document.querySelector(".form__btn");
