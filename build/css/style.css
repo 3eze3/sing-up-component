@@ -239,7 +239,7 @@ button {
   }
 }
 .card__products::before {
-  content: url("../../build/assets/images/icon-list.svg");
+  content: url("../assets/images/icon-list.svg");
 }
 
 .success {
